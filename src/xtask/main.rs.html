@@ -1,10 +1,4 @@
-<!DOCTYPE html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><meta name="generator" content="rustdoc"><meta name="description" content="Source of the Rust file `xtask/src/main.rs`."><meta name="keywords" content="rust, rustlang, rust-lang"><title>main.rs - source</title><link rel="preload" as="font" type="font/woff2" crossorigin href="../../SourceSerif4-Regular.ttf.woff2"><link rel="preload" as="font" type="font/woff2" crossorigin href="../../FiraSans-Regular.woff2"><link rel="preload" as="font" type="font/woff2" crossorigin href="../../FiraSans-Medium.woff2"><link rel="preload" as="font" type="font/woff2" crossorigin href="../../SourceCodePro-Regular.ttf.woff2"><link rel="preload" as="font" type="font/woff2" crossorigin href="../../SourceSerif4-Bold.ttf.woff2"><link rel="preload" as="font" type="font/woff2" crossorigin href="../../SourceCodePro-Semibold.ttf.woff2"><link rel="stylesheet" type="text/css" href="../../normalize.css"><link rel="stylesheet" type="text/css" href="../../rustdoc.css" id="mainThemeStyle"><link rel="stylesheet" type="text/css" href="../../ayu.css" disabled><link rel="stylesheet" type="text/css" href="../../dark.css" disabled><link rel="stylesheet" type="text/css" href="../../light.css" id="themeStyle"><script id="default-settings" ></script><script src="../../storage.js"></script><script defer src="../../source-script.js"></script><script defer src="../../source-files.js"></script><script defer src="../../main.js"></script><noscript><link rel="stylesheet" href="../../noscript.css"></noscript><link rel="alternate icon" type="image/png" href="../../favicon-16x16.png"><link rel="alternate icon" type="image/png" href="../../favicon-32x32.png"><link rel="icon" type="image/svg+xml" href="../../favicon.svg"></head><body class="rustdoc source"><!--[if lte IE 11]><div class="warning">This old browser is unsupported and will most likely display funky things.</div><![endif]--><nav class="mobile-topbar"><button class="sidebar-menu-toggle">&#9776;</button><a class="sidebar-logo" href="../../xtask/index.html"><div class="logo-container"><img class="rust-logo" src="../../rust-logo.svg" alt="logo"></div>
-        </a><h2 class="location"></h2>
-    </nav>
-    <nav class="sidebar"><a class="sidebar-logo" href="../../xtask/index.html"><div class="logo-container"><img class="rust-logo" src="../../rust-logo.svg" alt="logo"></div>
-        </a></nav><main><div class="width-limiter"><div class="sub-container"><a class="sub-logo-container" href="../../xtask/index.html"><img class="rust-logo" src="../../rust-logo.svg" alt="logo"></a><nav class="sub"><form class="search-form"><div class="search-container"><span></span><input class="search-input" name="search" autocomplete="off" spellcheck="false" placeholder="Click or press ‘S’ to search, ‘?’ for more options…" type="search"><div id="help-button" title="help" tabindex="-1"><button type="button">?</button></div><div id="settings-menu" tabindex="-1">
-                                <a href="../../settings.html" title="settings"><img width="22" height="22" alt="Change settings" src="../../wheel.svg"></a></div>
-                        </div></form></nav></div><section id="main-content" class="content"><div class="example-wrap"><pre class="line-numbers"><span id="1">1</span>
+<!DOCTYPE html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><meta name="generator" content="rustdoc"><meta name="description" content="Source of the Rust file `xtask/src/main.rs`."><meta name="keywords" content="rust, rustlang, rust-lang"><title>main.rs - source</title><link rel="preload" as="font" type="font/woff2" crossorigin href="../../SourceSerif4-Regular.ttf.woff2"><link rel="preload" as="font" type="font/woff2" crossorigin href="../../FiraSans-Regular.woff2"><link rel="preload" as="font" type="font/woff2" crossorigin href="../../FiraSans-Medium.woff2"><link rel="preload" as="font" type="font/woff2" crossorigin href="../../SourceCodePro-Regular.ttf.woff2"><link rel="preload" as="font" type="font/woff2" crossorigin href="../../SourceSerif4-Bold.ttf.woff2"><link rel="preload" as="font" type="font/woff2" crossorigin href="../../SourceCodePro-Semibold.ttf.woff2"><link rel="stylesheet" type="text/css" href="../../normalize.css"><link rel="stylesheet" type="text/css" href="../../rustdoc.css" id="mainThemeStyle"><link rel="stylesheet" type="text/css" href="../../ayu.css" disabled><link rel="stylesheet" type="text/css" href="../../dark.css" disabled><link rel="stylesheet" type="text/css" href="../../light.css" id="themeStyle"><script id="default-settings" ></script><script src="../../storage.js"></script><script defer src="../../source-script.js"></script><script defer src="../../source-files.js"></script><script defer src="../../main.js"></script><noscript><link rel="stylesheet" href="../../noscript.css"></noscript><link rel="alternate icon" type="image/png" href="../../favicon-16x16.png"><link rel="alternate icon" type="image/png" href="../../favicon-32x32.png"><link rel="icon" type="image/svg+xml" href="../../favicon.svg"></head><body class="rustdoc source"><!--[if lte IE 11]><div class="warning">This old browser is unsupported and will most likely display funky things.</div><![endif]--><nav class="mobile-topbar"><button class="sidebar-menu-toggle">&#9776;</button><a class="sidebar-logo" href="../../xtask/index.html"><div class="logo-container"><img class="rust-logo" src="../../rust-logo.svg" alt="logo"></div></a><h2 class="location"></h2></nav><nav class="sidebar"><a class="sidebar-logo" href="../../xtask/index.html"><div class="logo-container"><img class="rust-logo" src="../../rust-logo.svg" alt="logo"></div></a></nav><main><div class="width-limiter"><div class="sub-container"><a class="sub-logo-container" href="../../xtask/index.html"><img class="rust-logo" src="../../rust-logo.svg" alt="logo"></a><nav class="sub"><form class="search-form"><div class="search-container"><span></span><input class="search-input" name="search" autocomplete="off" spellcheck="false" placeholder="Click or press ‘S’ to search, ‘?’ for more options…" type="search"><div id="help-button" title="help" tabindex="-1"><button type="button">?</button></div><div id="settings-menu" tabindex="-1"><a href="../../settings.html" title="settings"><img width="22" height="22" alt="Change settings" src="../../wheel.svg"></a></div></div></form></nav></div><section id="main-content" class="content"><div class="example-wrap"><pre class="line-numbers"><span id="1">1</span>
 <span id="2">2</span>
 <span id="3">3</span>
 <span id="4">4</span>
@@ -462,10 +456,24 @@
 <span id="456">456</span>
 <span id="457">457</span>
 <span id="458">458</span>
-</pre><pre class="rust"><code><span class="attribute">#![<span class="ident">feature</span>(<span class="ident">path_file_prefix</span>)]</span>
-<span class="attribute">#![<span class="ident">feature</span>(<span class="ident">exit_status_error</span>)]</span>
-
-<span class="attribute">#[<span class="ident">macro_use</span>]</span>
+<span id="459">459</span>
+<span id="460">460</span>
+<span id="461">461</span>
+<span id="462">462</span>
+<span id="463">463</span>
+<span id="464">464</span>
+<span id="465">465</span>
+<span id="466">466</span>
+<span id="467">467</span>
+<span id="468">468</span>
+<span id="469">469</span>
+<span id="470">470</span>
+<span id="471">471</span>
+<span id="472">472</span>
+<span id="473">473</span>
+<span id="474">474</span>
+<span id="475">475</span>
+</pre><pre class="rust"><code><span class="attribute">#[<span class="ident">macro_use</span>]</span>
 <span class="kw">extern</span> <span class="kw">crate</span> <span class="ident">clap</span>;
 
 <span class="kw">use</span> <span class="ident">clap::Parser</span>;
@@ -485,7 +493,7 @@
 <span class="kw">mod</span> <span class="ident">linux</span>;
 
 <span class="kw">use</span> <span class="ident">arch</span>::{<span class="ident">Arch</span>, <span class="ident">ArchArg</span>};
-<span class="kw">use</span> <span class="ident">build</span>::{<span class="ident">AsmArgs</span>, <span class="ident">BuildArgs</span>, <span class="ident">GdbArgs</span>, <span class="ident">QemuArgs</span>};
+<span class="kw">use</span> <span class="ident">build</span>::{<span class="ident">BuildArgs</span>, <span class="ident">GdbArgs</span>, <span class="ident">OutArgs</span>, <span class="ident">QemuArgs</span>};
 <span class="kw">use</span> <span class="ident">errors::XError</span>;
 <span class="kw">use</span> <span class="ident">linux::LinuxRootfs</span>;
 
@@ -551,9 +559,9 @@
     <span class="comment">// --------------------------------------------------------</span>
     <span class="doccomment">/// 初始化项目。Initializes the project.</span>
     <span class="doccomment">///</span>
-    <span class="doccomment">/// 转换 git lfs，更新子项目。</span>
+    <span class="doccomment">/// 安装 zircon 模式所需的二进制，并更新子项目。</span>
     <span class="doccomment">///</span>
-    <span class="doccomment">/// Git lfs install and pull. Submodules will be updated.</span>
+    <span class="doccomment">/// Install binaries needed by zircon mode, and Submodules will be updated.</span>
     <span class="doccomment">///</span>
     <span class="doccomment">/// ## Example</span>
     <span class="doccomment">///</span>
@@ -587,19 +595,31 @@
     <span class="comment">// ========================================================</span>
     <span class="comment">// 开发和调试</span>
     <span class="comment">// --------------------------------------------------------</span>
-    <span class="doccomment">/// 内核反汇编。Dumps the asm of kernel.</span>
+    <span class="doccomment">/// 反汇并保存编指定架构的内核。Dumps the asm of kernel for specific architecture.</span>
     <span class="doccomment">///</span>
-    <span class="doccomment">/// 将适应指定架构的内核反汇编并输出到文件。默认输出文件为项目目录下的 `zcore.asm`。</span>
+    <span class="doccomment">/// 默认保存到 `target/zcore.asm`。</span>
     <span class="doccomment">///</span>
-    <span class="doccomment">/// Dumps the asm of kernel for specific architecture.</span>
-    <span class="doccomment">/// The default output is `zcore.asm` in the project directory.</span>
+    <span class="doccomment">/// The default output is `target/zcore.asm`.</span>
     <span class="doccomment">///</span>
     <span class="doccomment">/// # Example</span>
     <span class="doccomment">///</span>
     <span class="doccomment">/// ```bash</span>
     <span class="doccomment">/// cargo asm --arch riscv64 --output riscv64.asm</span>
     <span class="doccomment">/// ```</span>
-    <span class="ident">Asm</span>(<span class="ident">AsmArgs</span>),
+    <span class="ident">Asm</span>(<span class="ident">OutArgs</span>),
+
+    <span class="doccomment">/// 生成内核 raw 镜像到指定位置。Strips kernel binary for specific architecture.</span>
+    <span class="doccomment">///</span>
+    <span class="doccomment">/// 默认输出到 `target/{arch}/release/zcore.bin`。</span>
+    <span class="doccomment">///</span>
+    <span class="doccomment">/// The default output is `target/{arch}/release/zcore.bin`.</span>
+    <span class="doccomment">///</span>
+    <span class="doccomment">/// # Example</span>
+    <span class="doccomment">///</span>
+    <span class="doccomment">/// ```bash</span>
+    <span class="doccomment">/// cargo bin --arch riscv64 --output zcore.bin</span>
+    <span class="doccomment">/// ```</span>
+    <span class="ident">Bin</span>(<span class="ident">OutArgs</span>),
 
     <span class="doccomment">/// 在 qemu 中启动 zCore。Runs zCore in qemu.</span>
     <span class="doccomment">///</span>
@@ -754,7 +774,7 @@
         <span class="attribute">#[<span class="ident">cfg</span>(<span class="ident">not</span>(<span class="ident">target_arch</span> <span class="op">=</span> <span class="string">&quot;riscv64&quot;</span>))]</span>
         <span class="ident">Dump</span> =&gt; <span class="ident">dump::dump_config</span>(),
         <span class="ident">Initialize</span> =&gt; {
-            <span class="ident">make_git_lfs</span>();
+            <span class="ident">install_zircon_prebuilt</span>();
             <span class="ident">git_submodule_update</span>(<span class="bool-val">true</span>);
         }
         <span class="ident">UpdateAll</span> =&gt; <span class="ident">update_all</span>(),
@@ -762,7 +782,7 @@
 
         <span class="ident">Rootfs</span>(<span class="ident">arg</span>) =&gt; <span class="ident">arg</span>.<span class="ident">linux_rootfs</span>().<span class="ident">make</span>(<span class="bool-val">true</span>),
         <span class="ident">MuslLibs</span>(<span class="ident">arg</span>) =&gt; {
-            <span class="comment">// 必须丢弃返回值</span>
+            <span class="comment">// 丢弃返回值</span>
             <span class="ident">arg</span>.<span class="ident">linux_rootfs</span>().<span class="ident">put_musl_libs</span>();
         }
         <span class="ident">Opencv</span>(<span class="ident">arg</span>) =&gt; <span class="ident">arg</span>.<span class="ident">linux_rootfs</span>().<span class="ident">put_opencv</span>(),
@@ -771,37 +791,44 @@
         <span class="ident">OtherTest</span>(<span class="ident">arg</span>) =&gt; <span class="ident">arg</span>.<span class="ident">linux_rootfs</span>().<span class="ident">put_other_test</span>(),
         <span class="ident">Image</span>(<span class="ident">arg</span>) =&gt; <span class="ident">arg</span>.<span class="ident">linux_rootfs</span>().<span class="ident">image</span>(),
 
+        <span class="ident">Asm</span>(<span class="ident">args</span>) =&gt; <span class="ident">args</span>.<span class="ident">asm</span>(),
+        <span class="ident">Bin</span>(<span class="ident">args</span>) =&gt; {
+            <span class="comment">// 丢弃返回值</span>
+            <span class="ident">args</span>.<span class="ident">bin</span>();
+        }
+        <span class="ident">Qemu</span>(<span class="ident">args</span>) =&gt; <span class="ident">args</span>.<span class="ident">qemu</span>(),
+        <span class="ident">Gdb</span>(<span class="ident">args</span>) =&gt; <span class="ident">args</span>.<span class="ident">gdb</span>(),
+
         <span class="ident">LibosLibcTest</span> =&gt; {
             <span class="ident">libos::rootfs</span>(<span class="bool-val">true</span>);
             <span class="ident">libos::put_libc_test</span>();
         }
         <span class="ident">LinuxLibos</span>(<span class="ident">arg</span>) =&gt; <span class="ident">libos::linux_run</span>(<span class="ident">arg</span>.<span class="ident">args</span>),
-
-        <span class="ident">Asm</span>(<span class="ident">args</span>) =&gt; <span class="ident">args</span>.<span class="ident">asm</span>(),
-        <span class="ident">Qemu</span>(<span class="ident">args</span>) =&gt; <span class="ident">args</span>.<span class="ident">qemu</span>(),
-        <span class="ident">Gdb</span>(<span class="ident">args</span>) =&gt; <span class="ident">args</span>.<span class="ident">gdb</span>(),
     }
-}
-
-<span class="doccomment">/// 初始化 LFS。</span>
-<span class="kw">fn</span> <span class="ident">make_git_lfs</span>() {
-    <span class="kw">use</span> <span class="ident">command_ext</span>::{<span class="ident">CommandExt</span>, <span class="ident">Git</span>};
-    <span class="kw">if</span> <span class="op">!</span><span class="ident">Git::lfs</span>()
-        .<span class="ident">arg</span>(<span class="string">&quot;version&quot;</span>)
-        .<span class="ident">as_mut</span>()
-        .<span class="ident">output</span>()
-        .<span class="ident">map_or</span>(<span class="bool-val">false</span>, <span class="op">|</span><span class="ident">out</span><span class="op">|</span> <span class="ident">out</span>.<span class="ident">stdout</span>.<span class="ident">starts_with</span>(<span class="string">b&quot;git-lfs/&quot;</span>))
-    {
-        <span class="macro">panic!</span>(<span class="string">&quot;Cannot find git lfs, see https://git-lfs.github.com/ for help.&quot;</span>);
-    }
-    <span class="ident">Git::lfs</span>().<span class="ident">arg</span>(<span class="string">&quot;install&quot;</span>).<span class="ident">invoke</span>();
-    <span class="ident">Git::lfs</span>().<span class="ident">arg</span>(<span class="string">&quot;pull&quot;</span>).<span class="ident">invoke</span>();
 }
 
 <span class="doccomment">/// 更新子项目。</span>
 <span class="kw">fn</span> <span class="ident">git_submodule_update</span>(<span class="ident">init</span>: <span class="ident">bool</span>) {
     <span class="kw">use</span> <span class="ident">command_ext</span>::{<span class="ident">CommandExt</span>, <span class="ident">Git</span>};
     <span class="ident">Git::submodule_update</span>(<span class="ident">init</span>).<span class="ident">invoke</span>();
+}
+
+<span class="doccomment">/// 下载并安装zircon模式所需的测例和库</span>
+<span class="kw">fn</span> <span class="ident">install_zircon_prebuilt</span>() {
+    <span class="kw">use</span> <span class="ident">command_ext</span>::{<span class="ident">dir</span>, <span class="ident">CommandExt</span>, <span class="ident">Tar</span>};
+    <span class="kw">use</span> <span class="ident">commands::wget</span>;
+    <span class="kw">const</span> <span class="ident">URL</span>: <span class="kw-2">&amp;</span><span class="ident">str</span> <span class="op">=</span>
+        <span class="string">&quot;https://github.com/rcore-os/zCore/releases/download/prebuilt-2208/prebuilt.tar.xz&quot;</span>;
+    <span class="kw">let</span> <span class="ident">tar</span> <span class="op">=</span> <span class="ident">Arch::X86_64</span>.<span class="ident">origin</span>().<span class="ident">join</span>(<span class="string">&quot;prebuilt.tar.xz&quot;</span>);
+    <span class="ident">wget</span>(<span class="ident">URL</span>, <span class="kw-2">&amp;</span><span class="ident">tar</span>);
+    <span class="comment">// 解压到目标路径</span>
+    <span class="kw">let</span> <span class="ident">dir</span> <span class="op">=</span> <span class="ident">PROJECT_DIR</span>.<span class="ident">join</span>(<span class="string">&quot;prebuilt&quot;</span>);
+    <span class="kw">let</span> <span class="ident">target</span> <span class="op">=</span> <span class="ident">TARGET</span>.<span class="ident">join</span>(<span class="string">&quot;zircon&quot;</span>);
+    <span class="ident">dir::rm</span>(<span class="kw-2">&amp;</span><span class="ident">dir</span>).<span class="ident">unwrap</span>();
+    <span class="ident">dir::rm</span>(<span class="kw-2">&amp;</span><span class="ident">target</span>).<span class="ident">unwrap</span>();
+    <span class="ident">fs::create_dir_all</span>(<span class="kw-2">&amp;</span><span class="ident">target</span>).<span class="ident">unwrap</span>();
+    <span class="ident">Tar::xf</span>(<span class="kw-2">&amp;</span><span class="ident">tar</span>, <span class="prelude-val">Some</span>(<span class="kw-2">&amp;</span><span class="ident">target</span>)).<span class="ident">invoke</span>();
+    <span class="ident">dircpy::copy_dir</span>(<span class="ident">target</span>.<span class="ident">join</span>(<span class="string">&quot;prebuilt&quot;</span>), <span class="ident">dir</span>).<span class="ident">unwrap</span>();
 }
 
 <span class="doccomment">/// 更新工具链和依赖。</span>
@@ -867,6 +894,7 @@
         <span class="ident">BuildArgs</span> {
             <span class="ident">arch</span>: <span class="ident">ArchArg</span> { <span class="ident">arch</span> },
             <span class="ident">debug</span>: <span class="bool-val">false</span>,
+            <span class="ident">features</span>: <span class="prelude-val">None</span>,
         }
         .<span class="ident">invoke</span>(<span class="ident">Cargo::clippy</span>);
     }
@@ -881,7 +909,7 @@
     <span class="kw">pub</span>(<span class="kw">super</span>) <span class="kw">fn</span> <span class="ident">rootfs</span>(<span class="ident">clear</span>: <span class="ident">bool</span>) {
         <span class="comment">// 下载</span>
         <span class="kw">const</span> <span class="ident">URL</span>: <span class="kw-2">&amp;</span><span class="ident">str</span> <span class="op">=</span>
-            <span class="string">&quot;https://github.com/YdrMaster/zCore/releases/download/dev-busybox/rootfs-libos.tar.gz&quot;</span>;
+            <span class="string">&quot;https://github.com/YdrMaster/zCore/releases/download/musl-cache/rootfs-libos.tar.gz&quot;</span>;
         <span class="kw">let</span> <span class="ident">origin</span> <span class="op">=</span> <span class="ident">ARCHS</span>.<span class="ident">join</span>(<span class="string">&quot;libos&quot;</span>).<span class="ident">join</span>(<span class="string">&quot;rootfs-libos.tar.gz&quot;</span>);
         <span class="ident">dir::create_parent</span>(<span class="kw-2">&amp;</span><span class="ident">origin</span>).<span class="ident">unwrap</span>();
         <span class="ident">wget</span>(<span class="ident">URL</span>, <span class="kw-2">&amp;</span><span class="ident">origin</span>);
@@ -914,12 +942,11 @@
         <span class="ident">Cargo::run</span>()
             .<span class="ident">package</span>(<span class="string">&quot;zcore&quot;</span>)
             .<span class="ident">release</span>()
-            .<span class="ident">features</span>(<span class="bool-val">true</span>, [<span class="string">&quot;linux&quot;</span>])
+            .<span class="ident">features</span>(<span class="bool-val">true</span>, [<span class="string">&quot;linux&quot;</span>, <span class="string">&quot;libos&quot;</span>])
             .<span class="ident">arg</span>(<span class="string">&quot;--&quot;</span>)
             .<span class="ident">args</span>(<span class="ident">args</span>.<span class="ident">split_whitespace</span>())
             .<span class="ident">invoke</span>()
     }
 }
 </code></pre></div>
-</section></div></main><div id="rustdoc-vars" data-root-path="../../" data-current-crate="xtask" data-themes="ayu,dark,light" data-resource-suffix="" data-rustdoc-version="1.64.0-nightly (27eb6d701 2022-07-04)" ></div>
-</body></html>
+</section></div></main><div id="rustdoc-vars" data-root-path="../../" data-current-crate="xtask" data-themes="ayu,dark,light" data-resource-suffix="" data-rustdoc-version="1.64.0-nightly (f6f9d5e73 2022-08-04)" ></div></body></html>
